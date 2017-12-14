@@ -1,10 +1,16 @@
 $(document).ready(function ()
 {   
+	var food = $('#entryDish').val();
+	
     $(function (){
         $.ajax({                                      
-            url: '../../getComments.php',                          
-            data: "",                             
-            dataType: 'json',                   
+            url: '../../getComments.php',   
+			type: 'post',
+            dataType: 'json',     
+			data: 
+			{
+				food: food
+			},
             success: function(data)        
             {
                 $('#commentEntry').html("");

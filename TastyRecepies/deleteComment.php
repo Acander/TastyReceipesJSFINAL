@@ -6,8 +6,11 @@
 	use Functionality\Util\InputFiltering;
 
 	if(!isset($_POST['c_id'])){
+		echo "Does not works";
 		return;
 	}
+	
+	echo "works";
 	
 	if(!empty($_POST['c_id'])){
 		$c_id = (int) $_POST['c_id'];

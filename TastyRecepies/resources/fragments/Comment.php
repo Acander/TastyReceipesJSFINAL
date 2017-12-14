@@ -38,6 +38,8 @@
 			else{
 				echo"</label>";
 			}
+			echo"<label id='entryDish' for = 'comment'>'$food'</label>";
+			
 			
 			echo "<div id = conversation></div>";
 			/**json_encode here and the rest in javascript*/
